@@ -265,12 +265,12 @@
              <input id="tuRef" type="text" maxlength="120" placeholder="Transaction hash or bank reference" />
            </div>
            <div class="field">
-             <label>Payment proof (optional)</label>
+             <label>Payment proof </label>
              <label class="file-drop" for="tuProof">
                <span class="i" data-icon="image"></span>
                <span id="tuProofLabel" class="truncate">Upload screenshot or receipt (max 5MB)</span>
              </label>
-             <input id="tuProof" class="sr-only" type="file" accept="image/*,application/pdf" />
+             <input id="tuProof" class="sr-only" type="file" accept="image/*,application/pdf" required />
            </div>
            <button class="btn" id="tuSubmit" type="submit">Submit for approval</button>
          </form>`,
