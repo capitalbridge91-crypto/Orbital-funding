@@ -8,13 +8,13 @@ window.ORBITAL_CONFIG = {
   /* Placeholder payment details — replace with your live wallet / bank info. */
   BTC_DETAILS: [
     { label: "Network", value: "Bitcoin (BTC)" },
-    { label: "Wallet address", value: "bc1qplaceholder0000orbitalfunding0000address" },
+    { label: "Wallet address", value: "bc1q0n5edtj7yvw7rhrkghlc95v76lzpt78nz3xnr5" },
   ],
   BANK_DETAILS: [
-    { label: "Bank name", value: "Placeholder Bank PLC" },
-    { label: "Account name", value: "Orbital Funding Ltd" },
-    { label: "Account number", value: "0000000000" },
-    { label: "Routing / Sort code", value: "000000" },
-    { label: "SWIFT / BIC", value: "PLCEHLDRXXX" },
+    { label: "Bank name", value: "Clear Junction Limited" },
+    { label: "Account name", value: "justice osayame aighobahi - Orbital Sec" },
+    { label: "Account number", value: "42717009" },
+    { label: "Routing / Sort code", value: "041307" },
+    { label: "SWIFT / BIC", value: "CLJUGB21XXX" },
   ],
 };
