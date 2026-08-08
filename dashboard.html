@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard — Orbital Funding</title>
+<meta name="description" content="Manage your wallet, top-ups, funded accounts and purchase history." />
+<meta property="og:title" content="Dashboard — Orbital Funding" />
+<meta property="og:description" content="Your Orbital Funding wallet and accounts." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="scrim" id="scrim"></div>
+    <aside class="sidebar" id="sidebar">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+        <a class="brand" href="index.html" style="padding:6px 8px"><span class="mark i" data-icon="zap"></span> Orbital</a>
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close menu"><span class="i" data-icon="close"></span></button>
+      </div>
+      <nav id="nav"></nav>
+      <div class="spacer"></div>
+      <button class="nav-item" id="logoutBtn"><span class="i" data-icon="logout"></span> Logout</button>
+    </aside>
+
+    <div class="app-main">
+      <header class="app-header">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span class="i" data-icon="menu"></span></button>
+        <h1 class="truncate" id="pageTitle" style="font-size:17px">Dashboard</h1>
+        <span class="balance-chip" id="balanceChip">$0.00</span>
+      </header>
+      <main class="app-body" id="view">
+        <p class="muted">Loading…</p>
+      </main>
+    </div>
+  </div>
+
+  <div id="modalHost"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
