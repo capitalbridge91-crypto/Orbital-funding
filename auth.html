@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sign in — Orbital Funding</title>
+<meta name="description" content="Log in or create your Orbital Funding account to buy funded trading accounts." />
+<meta property="og:title" content="Sign in — Orbital Funding" />
+<meta property="og:description" content="Access your Orbital Funding wallet, accounts and purchase history." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-hero grid-lines">
+  <div class="auth-wrap">
+    <a class="row muted" href="index.html" style="margin-bottom:26px;font-size:14px">
+      <span class="i" data-icon="arrowLeft"></span> Back to home
+    </a>
+
+    <div class="card auth-card">
+      <div class="brand"><span class="mark i" data-icon="zap"></span> Orbital Funding</div>
+      <h1 id="authTitle" style="margin-top:22px;font-size:24px">Welcome back</h1>
+      <p id="authSub" class="muted" style="margin-top:6px;font-size:14px">Log in to your dashboard and inventory.</p>
+
+      <form id="authForm" style="margin-top:26px;display:grid;gap:16px">
+        <div class="field hidden" id="nameField">
+          <label for="fullName">Full name</label>
+          <input id="fullName" type="text" maxlength="100" placeholder="Alex Morgan" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" required maxlength="255" placeholder="you@email.com" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" required maxlength="72" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <button class="btn btn-block" id="submitBtn" type="submit">Log in</button>
+      </form>
+
+      <div class="or-line"><span class="line"></span> or <span class="line"></span></div>
+      <button class="btn btn-outline btn-block" id="googleBtn" type="button">Continue with Google</button>
+
+      <p class="muted center" style="margin-top:22px;font-size:14px">
+        <span id="switchLabel">New to Orbital?</span>
+        <button type="button" class="link" id="switchBtn">Create one</button>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
