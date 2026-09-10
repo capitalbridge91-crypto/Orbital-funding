@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Admin — Orbital Funding</title>
+<meta name="description" content="Approve top-ups, upload account logs and track sales." />
+<meta property="og:title" content="Admin — Orbital Funding" />
+<meta property="og:description" content="Orbital Funding operations console." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container inner">
+      <div class="row" style="min-width:0">
+        <span class="mark i" data-icon="zap" style="display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--primary);color:var(--primary-foreground)"></span>
+        <span class="truncate" style="font-family:var(--font-display);font-weight:600;font-size:17px">Admin console</span>
+        <span class="i" data-icon="shield" style="color:var(--primary)"></span>
+      </div>
+      <div class="row" style="gap:8px">
+        <a class="btn btn-ghost btn-sm" href="dashboard.html"><span class="i" data-icon="arrowLeft"></span> Dashboard</a>
+        <button class="btn btn-outline btn-sm" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:26px;padding-bottom:60px">
+    <section class="grid" id="stats" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr))"></section>
+
+    <div class="tabs" id="tabs" style="margin-top:28px"></div>
+    <div id="tabBody" style="margin-top:22px"><p class="muted">Loading…</p></div>
+  </main>
+
+  <div id="modalHost"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
